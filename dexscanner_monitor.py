@@ -668,6 +668,8 @@ class DexscannerMonitor:
 
 # Entry point
 if __name__ == "__main__":
+    monitor = DexscannerMonitor()
+    monitor.check_new_listings()
     # Check if environment variables are set
     if not TELEGRAM_BOT_TOKEN or not TELEGRAM_CHAT_ID:
         logger.error("TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set in environment variables")
