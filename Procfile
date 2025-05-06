@@ -1,1 +1,1 @@
-start=python dexscanner_monitor.py
+python dexscanner_monitor.py
